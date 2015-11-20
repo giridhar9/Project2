@@ -1,0 +1,840 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+  padding: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-right: 0;
+  margin-right: 0; }
+
+@font-face {
+  font-family: 'opensans';
+  src: url("../assets/fonts/opensans-extrabold-webfont.eot");
+  src: url("../assets/fonts/opensans-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/opensans-extrabold-webfont.woff2") format("woff2"), url("../assets/fonts/opensans-extrabold-webfont.woff") format("woff"), url("../assets/fonts/opensans-extrabold-webfont.ttf") format("truetype"), url("../assets/fonts/opensans-extrabold-webfont.svg#open_sansextrabold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'opensans';
+  src: url("../assets/fonts/opensans-extrabolditalic-webfont.eot");
+  src: url("../assets/fonts/opensans-extrabolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/opensans-extrabolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/opensans-extrabolditalic-webfont.woff") format("woff"), url("../assets/fonts/opensans-extrabolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/opensans-extrabolditalic-webfont.svg#open_sansextrabold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'opensans';
+  src: url("../assets/fonts/opensans-italic-webfont.eot");
+  src: url("../assets/fonts/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-italic-webfont.woff2") format("woff2"), url("../assets/fonts/opensans-italic-webfont.woff") format("woff"), url("../assets/fonts/opensans-italic-webfont.ttf") format("truetype"), url("../assets/fonts/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'opensans';
+  src: url("../assets/fonts/opensans-regular-webfont.eot");
+  src: url("../assets/fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/opensans-regular-webfont.woff2") format("woff2"), url("../assets/fonts/opensans-regular-webfont.woff") format("woff"), url("../assets/fonts/opensans-regular-webfont.ttf") format("truetype"), url("../assets/fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../assets/fonts/merriweather-regular-webfont.eot");
+  src: url("../assets/fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/merriweather-regular-webfont.woff2") format("woff2"), url("../assets/fonts/merriweather-regular-webfont.woff") format("woff"), url("../assets/fonts/merriweather-regular-webfont.ttf") format("truetype"), url("../assets/fonts/merriweather-regular-webfont.svg#merriweatherregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'fontawesome';
+  src: url("../assets/fonts/fontawesome-webfont-webfont.eot");
+  src: url("../assets/fonts/fontawesome-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/fontawesome-webfont-webfont.woff2") format("woff2"), url("../assets/fonts/fontawesome-webfont-webfont.woff") format("woff"), url("../assets/fonts/fontawesome-webfont-webfont.ttf") format("truetype"), url("../assets/fonts/fontawesome-webfont-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../assets/fonts/merriweather-bold-webfont.eot");
+  src: url("../assets/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../assets/fonts/merriweather-bold-webfont.woff") format("woff"), url("../assets/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../assets/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../assets/fonts/merriweather-bolditalic-webfont.eot");
+  src: url("../assets/fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../assets/fonts/merriweather-italic-webfont.eot");
+  src: url("../assets/fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/merriweather-italic-webfont.woff2") format("woff2"), url("../assets/fonts/merriweather-italic-webfont.woff") format("woff"), url("../assets/fonts/merriweather-italic-webfont.ttf") format("truetype"), url("../assets/fonts/merriweather-italic-webfont.svg#merriweatheritalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+html {
+  font-size: 18px; }
+
+.main {
+  background-image: url("../assets/images/rustic-masthead.jpg");
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: white; }
+
+img {
+  max-width: 100%; }
+
+.booking {
+  background-image: url("../assets/images/tables.jpg");
+  background-size: 100% 100%;
+  color: white; }
+
+.label {
+  padding-left: 30px;
+  font-weight: bold; }
+
+#w {
+  text-align: left; }
+
+input {
+  width: 80%;
+  text-align: center; }
+
+label input {
+  margin: 5px auto; }
+
+#table {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 20px 20px 20px 20px;
+  background-size: 90% 50%; }
+
+#table h1 {
+  text-align: center;
+  font-size: 1.7rem; }
+
+#table p {
+  text-align: center; }
+
+#table input {
+  border-style: groove;
+  border-color: #f89603;
+  text-align: center;
+  padding-right: 20px; }
+
+.start ul {
+  padding: 3px;
+  font-size: .7rem; }
+
+.start li {
+  display: inline;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px; }
+
+.start li a {
+  text-decoration: none;
+  color: white; }
+
+.start {
+  width: 100%;
+  text-align: center; }
+
+#logo {
+  text-align: center;
+  font-size: 1rem;
+  margin: 30px 0 0 0; }
+
+button {
+  background-color: #f89603;
+  color: white;
+  text-align: center;
+  width: 10em; }
+
+button h5 {
+  line-height: .5px;
+  font-size: .7rem;
+  width: 100%;
+  height: 100%; }
+
+#now {
+  text-align: center;
+  width: 100%;
+  padding-top: 15px; }
+
+.start2 {
+  text-align: center;
+  width: 100%; }
+
+#menu {
+  display: flex;
+  justify-content: center; }
+
+h5 {
+  color: white; }
+
+.day {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(72, 49, 24, 0.8);
+  height: 100%;
+  padding-top: .6%;
+  margin-top: 7%; }
+
+.day p {
+  line-height: .3; }
+
+.day #today {
+  font-size: .7rem; }
+
+.day #res-status {
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.local {
+  text-align: center; }
+
+.bx-wrapper img {
+  max-width: 100vw; }
+
+.food {
+  text-align: center; }
+
+.find {
+  text-align: center; }
+
+.find i {
+  color: #e0be72; }
+
+.bottom {
+  background-color: #483118;
+  width: 100%; }
+
+.foot:after {
+  content: ' ';
+  display: table;
+  clear: both; }
+
+.foot {
+  display: flex; }
+
+#stacked img {
+  width: 50%;
+  margin: 20px 20px; }
+
+#follow {
+  color: white;
+  width: 70%;
+  text-align: right;
+  margin-right: 10px; }
+
+#on {
+  font-size: .8rem; }
+
+#copy {
+  font-size: .6rem;
+  width: 100%;
+  padding-right: 30px; }
+
+body {
+  font-size: 18px;
+  background-color: #f3f3f3;
+  font-family: 'merriweather';
+  color: #292929;
+  width: 100%; }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px; }
+  .main {
+    background-image: url("../assets/images/rustic-masthead.jpg");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: white; }
+  .booking {
+    background-image: url("../assets/images/tables.jpg");
+    background-size: 100% 100%;
+    color: white;
+    padding: 5% 0; }
+  #w {
+    text-align: left; }
+  .label label {
+    width: 100%;
+    padding: 20px; }
+  #table {
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 90%;
+    height: 90%;
+    margin: 0 auto; }
+  #table input {
+    border-style: groove;
+    border-color: #f89603;
+    padding: 5px; }
+  .start {
+    padding: 7px;
+    display: flex;
+    justify-content: flex-end; }
+  .start li {
+    display: inline;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: .8rem; }
+  .start li a {
+    text-decoration: none;
+    color: white; }
+  #now {
+    text-align: center;
+    width: 100%;
+    padding-top: 15px; }
+  .start2 {
+    text-align: center;
+    width: 100%; }
+  #menu {
+    text-align: center;
+    width: 100%; }
+  h5 {
+    color: white; }
+  .local {
+    text-align: center; }
+  .bx-wrapper img,
+  .bx-wrapper li {
+    max-width: 50vw; }
+  .food {
+    width: 100%;
+    display: inline-block; }
+  .dinks:after {
+    content: ' ';
+    display: table;
+    clear: both; }
+  .food p {
+    font-size: .8rem; }
+  .forks {
+    width: 33.3%;
+    display: inline;
+    float: left; }
+  .knives {
+    width: 33.3%;
+    display: inline;
+    float: left; }
+  .glasses {
+    width: 33.3%;
+    display: inline;
+    float: right; }
+  .find {
+    text-align: center; }
+  #cont {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+  #map {
+    width: 33.3%; }
+  #phone {
+    width: 33.3%; }
+  #info {
+    width: 33.3%; }
+  .bottom {
+    background-color: #483118;
+    width: 100%; }
+  .foot:after {
+    content: ' ';
+    display: table;
+    clear: both; }
+  #stacked {
+    float: left;
+    margin: 20px 10px; }
+  #stacked img {
+    max-width: 100%; }
+  #follow {
+    float: right;
+    color: white;
+    margin: 20px 10px; }
+  #on {
+    font-size: 1rem; }
+  #copy {
+    font-size: .7rem;
+    padding-right: 0px; }
+  .first {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+  .second {
+    display: flex;
+    flex-direction: row; }
+  body {
+    font-size: 18px;
+    background-color: #f3f3f3;
+    font-family: 'merriweather';
+    color: #292929; } }
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 18px; }
+  .main {
+    background-image: url("../assets/images/rustic-masthead.jpg");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: white; }
+  .booking {
+    background-image: url("../assets/images/tables.jpg");
+    background-size: 100% 100%;
+    color: white; }
+  #w {
+    text-align: left; }
+  .label label {
+    width: 100%;
+    padding: 20px;
+    font-weight: bold; }
+  #table {
+    background-color: rgba(0, 0, 0, 0.45); }
+  #table input {
+    border-style: groove;
+    border-color: #f89603;
+    padding: 5px; }
+  .start {
+    display: flex;
+    justify-content: flex-end; }
+  .start li {
+    font-weight: bold; }
+  .start li a {
+    text-decoration: none;
+    color: white; }
+  #now {
+    text-align: center;
+    width: 100%;
+    padding-top: 15px; }
+  .start2 {
+    text-align: center;
+    width: 100%; }
+  #menu {
+    text-align: center;
+    width: 100%; }
+  h5 {
+    color: white; }
+  .local {
+    text-align: center; }
+  .bx-wrapper img,
+  .bx-wrapper li {
+    max-width: 33.3vw; }
+  .food {
+    width: 100%;
+    display: inline-block; }
+  .dinks:after {
+    content: ' ';
+    display: table;
+    clear: both; }
+  .food p {
+    font-size: .8rem; }
+  .forks {
+    width: 33.3%;
+    display: inline;
+    float: left; }
+  .knives {
+    width: 33.3%;
+    display: inline;
+    float: left; }
+  .glasses {
+    width: 33.3%;
+    display: inline;
+    float: right; }
+  .find {
+    text-align: center; }
+  #cont {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+  #map {
+    width: 33.3%; }
+  #phone {
+    width: 33.3%; }
+  #info {
+    width: 33.3%; }
+  .bottom {
+    background-color: #483118;
+    width: 100%; }
+  .foot:after {
+    content: ' ';
+    display: table;
+    clear: both; }
+  #stacked {
+    float: left; }
+  #stacked img {
+    width: 100%; }
+  #follow {
+    float: right;
+    color: white; }
+  #on {
+    font-size: 1rem; }
+  #copy {
+    font-size: .7rem; }
+  .first {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+  .second {
+    display: flex;
+    flex-direction: row; }
+  body {
+    font-size: 18px;
+    background-color: #f3f3f3;
+    font-family: 'merriweather';
+    color: #292929; } }
