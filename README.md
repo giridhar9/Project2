@@ -1,0 +1,3 @@
+100 Mile Resto Bar created as the second project for the Web Development program at RED Academy in Vancouver.
+
+This project was to develop a one-page, responsive website. Using Javascript, the site dynamicallys display whether the restaurant is open or not based on the day of the week, incorporates “smooth scrolling” into the menu that navigates to specific points in the page and uses a JQuery image slider. The site can be viewed online at this URL: http://https://giridhar9.github.io/Project2
